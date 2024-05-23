@@ -8,7 +8,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 
 // import market router to route market api
-import marketRouter from './src/products/markets.routes.js'
+import marketRouter from './src/markets/markets.routes.js'
 
 // import mongoConnection from its directory
 import { connectToMongoDB } from './src/config/mongodb.js'
