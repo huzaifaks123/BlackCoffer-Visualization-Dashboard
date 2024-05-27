@@ -1,6 +1,9 @@
 // import environment variable
 import 'dotenv/config'
 
+// import CORS to work with cross-browser
+import cors from 'cors'
+
 // import express from express-module
 import express from 'express'
 
@@ -15,6 +18,9 @@ import { connectToMongoDB } from './src/config/mongodb.js'
 
 // define express server
 const app = express()
+
+// Use the CORS middleware
+app.use(cors());
 
 // deifne port for server
 const port = process.env.PORT
